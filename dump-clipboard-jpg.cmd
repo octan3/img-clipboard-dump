@@ -1,5 +1,3 @@
 @echo off
-echo.
-powershell -sta -f dump-clipboard-jpg.ps1
-echo.
+powershell -ep bypass -File "%~dp0\%~n0.ps1" %1
 pause
